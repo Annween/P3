@@ -1,0 +1,11 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Création d'un site en mobile first ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/scss/main.scss:./css/style.css"
+  },
+  "author": "Orianne Gruber",
+  "license": "ISC"
+}
