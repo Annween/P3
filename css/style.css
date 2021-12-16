@@ -7,7 +7,7 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-h2, p, span, button {
+h2, h3, p, span, button {
   font-family: "Roboto", sans-serif;
 }
 
@@ -55,7 +55,11 @@ h2, p, span, button {
   .fonctionnement {
     padding: 10px 4%;
   }
+  .fonctionnement .buttons {
+    margin-top: 10px;
+  }
   .fonctionnement .buttons button {
+    margin-bottom: 15px;
     width: 100%;
     border-radius: 10px;
     border: none;
@@ -63,6 +67,11 @@ h2, p, span, button {
     font-weight: bold;
     box-shadow: 5px 10px 18px #888888;
     font-size: 18px;
+    display: flex;
+  }
+  .fonctionnement .buttons button ul {
+    list-style-type: none;
+    margin: 0;
   }
   .fonctionnement .buttons button:hover {
     background-color: #ddd3ee;
@@ -78,6 +87,38 @@ h2, p, span, button {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #9356DC;
+    width: 8px;
+  }
+
+  .restaurants {
+    padding: 10px 4%;
+  }
+  .restaurants .card {
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    padding: 10px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    background-color: white;
+  }
+  .restaurants .card__img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 137px;
+  }
+  .restaurants .card__container {
+    padding: 10px;
+  }
+  .restaurants .card__container h3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .restaurants .card__container h3 i {
+    padding-top: 10px;
+    font-size: 25px;
   }
 }
 

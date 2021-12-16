@@ -15,7 +15,7 @@ h1{
   font-family: $title;
 }
 
-h2, p, span, button
+h2, h3, p, span, button
 {
   font-family: $text;
 }
@@ -79,9 +79,10 @@ header
 
   .buttons
   {
-
+    margin-top: 10px;
     & button
     {
+      margin-bottom: 15px;
       width: 100%;
       border-radius: 10px;
       border: none;
@@ -89,6 +90,13 @@ header
       font-weight: bold;
       box-shadow: 5px 10px 18px #888888;
       font-size: 18px;
+      display: flex;
+
+      & ul
+      {
+        list-style-type: none;
+        margin: 0;
+      }
 
       &:hover
       {
@@ -112,7 +120,52 @@ header
       padding-left: 10px;
       padding-right: 10px;
       background-color: #9356DC;
+      width: 8px;
     }
   }
+  }
+
+  .restaurants
+  {
+    padding: $general_padding;
+
+    & .card
+    {
+      margin-top: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 20px 20px 20px 20px;
+      width: 100%;
+      padding: 10px;
+      transition: transform .2s;
+      cursor: pointer;
+      background-color: white;
+
+      &__img
+      {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        height: 137px;
+      }
+
+      &__container
+      {
+        padding:10px;
+
+
+        & h3
+        {
+          display: flex;
+          justify-content: space-between;
+
+          & i
+          {
+            padding-top: 10px;
+            font-size: 25px;
+
+          }
+        }
+      }
+    }
   }
 }
