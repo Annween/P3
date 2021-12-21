@@ -4,7 +4,8 @@
   "description": "Création d'un site en mobile first ",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./css/scss/main.scss:./css/style.css"
+    "sass": "sass --watch scss/main.scss:./css/main.css",
+    "meny_style": "sass --watch scss/menu.scss:./css/menu.css"
   },
   "author": "Orianne Gruber",
   "license": "ISC"

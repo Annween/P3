@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
           integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Ohmyfood</title>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <h1><a href="index.html">Ohmyfood</a></h1>
+<header class="header">
+    <div class="header__logo">
+        <a href="index.html"><h1>Ohmyfood</h1></a>
     </div>
-    <div class="location">
-        <span><i class="fas fa-map-marker-alt"></i> Paris, Belleville</span>
-    </div>
-    <div class="nav">
-        <span>Réserver le menu qui vous convient</span>
+    <form class="header__location">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" placeholder="Paris, Belleville">
+    </form>
+    <div class="header__nav">
+        <h2>Réserver le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exceptions sélectionnés par nos soins</p>
-        <button class="explore">Explorez nos restaurants</button>
+        <button class="header__nav__explore">Explorez nos restaurants</button>
     </div>
 </header>
 
@@ -28,12 +29,21 @@
     <h2>Fonctionnement</h2>
     <div class="buttons">
         <ul>
-            <li class="tinyCircle">1</li>
-            <li><button><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</button></li>
-            <li class="tinyCircle">2</li>
-            <li><button><i class="fas fa-bars"></i> Composez votre menu</button></li>
-            <li class="tinyCircle">3</li>
-        <li><button><i class="fas fa-bars"></i> Dégustez au restaurant</button></li>
+            <li>
+                <div class="tinyCircle">1</div>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+            </li>
+            <li>
+                <div class="tinyCircle">2</div>
+                <i class="fas fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </li>
+            <li>
+                <div class="tinyCircle">3</div>
+                <i class="fas fa-store"></i>
+                <p>Dégustez au restaurant</p>
+            </li>
         </ul>
     </div>
 </section>
@@ -41,15 +51,53 @@
 <section class="restaurants">
     <h2>Restaurants</h2>
 
+    <a href="#">
     <div class="card">
         <img class="card__img" alt="" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
         <div class="card__container">
             <h3><b>La palette du goût</b><i class="far fa-heart"></i></h3>
             <p>Ménilmontant</p>
         </div>
-
     </div>
+    </a>
+    <a href="#">
+    <div class="card">
+        <img class="card__img" alt="" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"/>
+        <div class="card__container">
+            <h3><b>La note enchantée</b><i class="far fa-heart"></i></h3>
+            <p>Charonne</p>
+        </div>
+    </div>
+    </a>
+<a href="./Menus/menu1.html">
+    <div class="card">
+        <img class="card__img" alt="" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/>
+        <div class="card__container">
+            <h3><b>À la française</b><i class="far fa-heart"></i></h3>
+            <p>Cité Rouge</p>
+        </div>
+    </div>
+</a>
+    <a href="#">
+    <div class="card">
+        <img class="card__img" alt="" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
+        <div class="card__container">
+            <h3><b>Le délice des sens</b><i class="far fa-heart"></i></h3>
+            <p>Folie-Méricourt</p>
+        </div>
+    </div>
+    </a>
 
 </section>
+<footer class="footer">
+    <h4>Ohmyfood</h4>
+    <ul>
+        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+    </ul>
+
+</footer>
 </body>
 </html>
