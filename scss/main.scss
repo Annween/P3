@@ -39,25 +39,32 @@ li {
     padding: 10px;
   }
 
-  &__location {
-    display: flex;
-  }
 
-  &__location i {
-    position: relative;
-    left: 60px;
-  }
+  &__location
+  {
 
-  &__location input {
-    text-align: center;
-    background-color: lightgray;
-    padding: 30px;
-    border: none;
-    display: block;
 
-    &::placeholder {
-      font-family: $text;
-      color: black;
+    & i
+    {
+      left: 160px;
+      top: 40px;
+      padding: 10px 10px;
+      position: relative;
+
+    }
+    & input
+    {
+
+      text-align: center;
+      background-color: lightgray;
+      border: none;
+      width: 94%;
+      padding: 15px;
+
+      &::placeholder {
+        font-family: $text;
+        color: black;
+      }
     }
   }
 

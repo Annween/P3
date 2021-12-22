@@ -29,19 +29,18 @@ li {
   display: inline-block;
   padding: 10px;
 }
-.header__location {
-  display: flex;
-}
 .header__location i {
+  left: 160px;
+  top: 40px;
+  padding: 10px 10px;
   position: relative;
-  left: 60px;
 }
 .header__location input {
   text-align: center;
   background-color: lightgray;
-  padding: 30px;
   border: none;
-  display: block;
+  width: 94%;
+  padding: 15px;
 }
 .header__location input::placeholder {
   font-family: "Roboto", sans-serif;
