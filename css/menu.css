@@ -37,7 +37,7 @@ li {
   width: 100%;
   text-decoration: none;
   color: black;
-  padding: 10px;
+  padding: 5px;
   display: inline-block;
   justify-content: space-between;
 }
@@ -58,12 +58,12 @@ li {
 .menu__container .restaurantName h2 {
   margin-top: 20px;
   margin-left: 20px;
-  font-size: 35px;
+  font-size: 30px;
 }
 .menu__container .restaurantName i {
   margin-top: 20px;
   margin-right: 20px;
-  font-size: 35px;
+  font-size: 30px;
 }
 .menu__container .restaurantName i:hover {
   background: linear-gradient(#ff79da, #9356dc);
@@ -107,6 +107,9 @@ li {
   animation-delay: 0.5s;
 }
 .menu__container .menu__description .menu__plats:nth-child(4) {
+  animation-delay: 0.75s;
+}
+.menu__container .menu__description .menu__plats__ .--exception:nth-child(5) {
   animation-delay: 0.75s;
 }
 .menu .order {
