@@ -18,33 +18,37 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
+.header {
+  text-align: center;
+}
 .header__logo a {
   background-color: white;
-  text-align: center;
   font-family: "Shrikhand", cursive;
   font-size: 25px;
-  width: 100%;
   text-decoration: none;
   color: black;
   display: inline-block;
-  padding: 10px;
+}
+.header__location {
+  width: 100%;
+  background-color: lightgray;
 }
 .header__location i {
-  left: 160px;
-  top: 40px;
+  text-align: right;
   padding: 10px 10px;
-  position: relative;
 }
 .header__location input {
   text-align: center;
   background-color: lightgray;
   border: none;
-  width: 94%;
+  width: 23%;
   padding: 15px;
 }
 .header__location input::placeholder {
+  text-align: left;
   font-family: "Roboto", sans-serif;
   color: black;
+  font-weight: bold;
 }
 .header__nav {
   margin-bottom: 30px;
@@ -52,6 +56,7 @@ li {
   background-color: #f2f2f2;
   padding: 10px;
   line-height: 2.5;
+  padding-bottom: 30px;
 }
 .header__nav__explore {
   color: white;
@@ -61,6 +66,7 @@ li {
   padding: 15px;
   border: none;
   background: linear-gradient(#ff79da, #9356dc);
+  margin-top: 20px;
 }
 
 .fonctionnement {
@@ -76,13 +82,13 @@ li {
 }
 .fonctionnement .buttons ul li {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   border-radius: 10px;
   border: none;
   padding: 20px;
   font-weight: bold;
   box-shadow: 5px 10px 18px #888888;
-  font-size: 16px;
+  font-size: 17px;
   align-items: center;
 }
 .fonctionnement .buttons ul li .tinyCircle {
@@ -91,7 +97,7 @@ li {
   background-color: #9356dc;
   width: 30px;
   height: 30px;
-  line-height: 2;
+  line-height: 1.75;
   text-align: center;
   position: relative;
   margin-left: -38px;
@@ -123,12 +129,13 @@ li {
   cursor: pointer;
   background-color: white;
   position: relative;
+  margin-bottom: 25px;
 }
 .restaurants a .card__img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
-  height: 137px;
+  height: 145px;
 }
 .restaurants a .card__top-right {
   position: absolute;
@@ -143,7 +150,7 @@ li {
   font-size: 14px;
 }
 .restaurants a .card__container {
-  padding: 10px;
+  padding: 5px;
 }
 .restaurants a .card__container h3 {
   display: flex;
@@ -162,21 +169,24 @@ li {
 
 .footer {
   color: white;
-  width: 100%;
   padding: 10px;
   background-color: #363233;
 }
-.footer h4 {
+.footer h3 {
   margin-bottom: 15px;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
 }
 .footer ul {
   list-style-type: none;
   padding-inline-start: 0;
 }
-.footer ul li {
+.footer ul a {
+  text-decoration: none;
+  color: white;
   line-height: 1.5;
 }
-.footer ul li i {
+.footer ul a i {
   margin-right: 10px;
 }
 
