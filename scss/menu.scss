@@ -36,8 +36,9 @@ li {
     color: black;
     & .arrow
     {
-      font-size: 35px;
-      padding: 25px;
+      font-size: 30px;
+      padding: 15px;
+      line-height: 1.5;
     }
   }
 
@@ -46,7 +47,6 @@ li {
     text-align: center;
     font-family: $title;
     font-size: 25px;
-    width: 100%;
     text-decoration: none;
     color: black;
     padding: 5px;
@@ -58,8 +58,9 @@ li {
 .menu {
   &__img {
     width: 100%;
-    //object-fit: cover;
     height: 220px;
+    object-fit: cover;
+
   }
 
   &__container .restaurantName {
@@ -106,16 +107,18 @@ li {
 
       & .menu__flex {
         display: flex;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: white;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        animation: fadein 0.5s forwards;
 
         & .menu__plats {
 
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          border-radius: 10px;
           padding: 10px;
-          background-color: white;
-          margin-bottom: 10px;
-          opacity: 0;
-          animation: fadein 0.5s forwards;
+          width: 100%;
 
           & .details {
             display: flex;
@@ -125,22 +128,36 @@ li {
               font-size: 14px;
             }
           }
+        }
 
           & .slide {
             background-color: $third_color;
-            position: absolute;
-            width: 30%;
-            height: 30px;
-            right: -150px;
+            width: 60px;
+            margin-right: -60px;
             transition: 1s;
-            //border-radius: 10px;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & i{
+              color: white;
+              font-size: 19px;
+            }
           }
 
           &:hover .slide {
             transition: 1s;
-            right: 0;
+            margin-right: 0;
+
+            & i
+            {
+
+              transition: 1s;
+              transform: rotate(360deg);
+            }
           }
-        }
+
 
 
         &:nth-child(2) {
@@ -155,8 +172,8 @@ li {
           animation-delay: 0.75s;
         }
 
-        &__ .--exception:nth-child(5) {
-          animation-delay: 0.75s;
+        &:nth-child(5) {
+          animation-delay: 1s;
         }
 
       }
