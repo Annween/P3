@@ -21,20 +21,26 @@ li {
 .loader {
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   background-color: white;
   z-index: 9999;
   width: 100%;
-  animation: loading 4s forwards;
+  animation: loading 3s forwards;
   text-align: center;
-  left: 0;
-  height: 100%;
 }
 .loader .lds-ellipsis {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
+  margin-top: 45%;
+}
+@media (min-width: 769px) {
+  .loader .lds-ellipsis {
+    margin-top: 20%;
+  }
 }
 .loader .lds-ellipsis div {
   position: absolute;
@@ -124,7 +130,6 @@ li {
 }
 .header__nav {
   margin-bottom: 30px;
-  text-align: center;
   background-color: #f2f2f2;
   padding: 10px;
   line-height: 2.5;
@@ -151,6 +156,11 @@ li {
   list-style-type: none;
   margin: 0;
   padding-inline-start: 0;
+}
+@media (min-width: 769px) {
+  .fonctionnement .buttons ul {
+    width: 50%;
+  }
 }
 .fonctionnement .buttons ul li {
   display: flex;
@@ -188,9 +198,20 @@ li {
 .restaurants {
   padding: 10px 4%;
 }
+@media (min-width: 769px) {
+  .restaurants__container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .restaurants a {
   text-decoration: none;
   color: black;
+}
+@media (min-width: 769px) {
+  .restaurants a {
+    width: 22%;
+  }
 }
 .restaurants a .card {
   margin-top: 10px;

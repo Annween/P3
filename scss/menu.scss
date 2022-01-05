@@ -28,17 +28,20 @@ li {
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 
-  &__menuLink
-  {
+  &__menuLink {
     text-decoration: none;
     color: black;
-    & .arrow
-    {
+
+    & i {
+      @media (min-width: 769px) {
+        display: none;
+      }
       font-size: 30px;
       padding: 15px;
       line-height: 1.5;
+      text-align: left;
     }
   }
 
@@ -49,9 +52,7 @@ li {
     font-size: 25px;
     text-decoration: none;
     color: black;
-    padding: 5px;
-    display: inline-block;
-    justify-content: space-between;
+
   }
 }
 
@@ -60,7 +61,9 @@ li {
     width: 100%;
     height: 220px;
     object-fit: cover;
-
+    @media (min-width: 769px) {
+      height: 365px;
+    }
   }
 
   &__container .restaurantName {
@@ -71,6 +74,7 @@ li {
     border-radius: 30px 30px 0 0;
     width: 100%;
     background-color: #f2f2f2;
+
     & h2 {
       margin-top: 20px;
       margin-left: 20px;
@@ -90,6 +94,7 @@ li {
       font-weight: 900;
     }
   }
+
   &__container {
     background-color: #f2f2f2;
 
@@ -103,6 +108,10 @@ li {
         margin-bottom: 30px;
         padding-bottom: 5px;
         width: 10%;
+        @media (min-width: 769px)
+        {
+          width: 6%;
+        }
       }
 
       & .menu__flex {
@@ -130,34 +139,32 @@ li {
           }
         }
 
-          & .slide {
-            background-color: $third_color;
-            width: 60px;
-            margin-right: -60px;
-            transition: 1s;
-            border-radius: 0 10px 10px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        & .slide {
+          background-color: $third_color;
+          width: 60px;
+          margin-right: -60px;
+          transition: 1s;
+          border-radius: 0 10px 10px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-            & i{
-              color: white;
-              font-size: 19px;
-            }
+          & i {
+            color: white;
+            font-size: 19px;
           }
+        }
 
-          &:hover .slide {
+        &:hover .slide {
+          transition: 1s;
+          margin-right: 0;
+
+          & i {
+
             transition: 1s;
-            margin-right: 0;
-
-            & i
-            {
-
-              transition: 1s;
-              transform: rotate(360deg);
-            }
+            transform: rotate(360deg);
           }
-
+        }
 
 
         &:nth-child(2) {
@@ -180,11 +187,11 @@ li {
     }
 
   }
+
   & .order {
     display: flex;
     justify-content: center;
     padding: 10px 10px 20px 10px;
-
     background-color: #f2f2f2;
 
     &__button {
@@ -196,6 +203,10 @@ li {
       width: 35%;
       border: none;
       background: linear-gradient($secondary_color, $primary_color);
+      @media (min-width: 769px) {
+        width: 15%;
+        font-size: 16px;
+      }
     }
   }
 }
@@ -221,12 +232,13 @@ li {
     list-style-type: none;
     padding-inline-start: 0;
 
-    & a
-    {
+    & a {
       text-decoration: none;
       color: white;
+
       li {
       }
+
       line-height: 1.5;
 
 

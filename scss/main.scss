@@ -26,18 +26,17 @@ li {
   font-family: $text;
 }
 
-.loader
-{
+.loader {
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   background-color: white;
   z-index: 9999;
   width: 100%;
-  animation: loading 4s forwards;
+  animation: loading 3s forwards;
   text-align: center;
-  left: 0;
-  height: 100%;
 
 
   & .lds-ellipsis {
@@ -45,8 +44,13 @@ li {
     position: relative;
     width: 80px;
     height: 80px;
+    @media (min-width: 769px) {
+      margin-top: 20%;
+    }
+    margin-top: 45%;
 
   }
+
   & .lds-ellipsis div {
     position: absolute;
     top: 33px;
@@ -55,24 +59,28 @@ li {
     border-radius: 50%;
     background: $primary_color;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
-
   }
+
   & .lds-ellipsis div:nth-child(1) {
     left: 8px;
     animation: lds-ellipsis1 0.6s infinite;
   }
-   & .lds-ellipsis div:nth-child(2) {
+
+  & .lds-ellipsis div:nth-child(2) {
     left: 8px;
     animation: lds-ellipsis2 0.6s infinite;
   }
-  &  .lds-ellipsis div:nth-child(3) {
+
+  & .lds-ellipsis div:nth-child(3) {
     left: 32px;
     animation: lds-ellipsis2 0.6s infinite;
   }
+
   & .lds-ellipsis div:nth-child(4) {
     left: 56px;
     animation: lds-ellipsis3 0.6s infinite;
   }
+
   @keyframes lds-ellipsis1 {
     0% {
       transform: scale(0);
@@ -101,31 +109,28 @@ li {
 }
 
 .header {
-
   text-align: center;
+
   &__logo a {
     background-color: white;
     font-family: $title;
     font-size: 25px;
     text-decoration: none;
     color: black;
-
   }
 
 
-  &__location
-  {
+  &__location {
     width: 100%;
     background-color: lightgray;
 
-    & i
-    {
+    & i {
       text-align: right;
       padding: 10px 10px;
 
     }
-    & input
-    {
+
+    & input {
       @media (min-width: 769px) {
         width: 10%;
       }
@@ -147,7 +152,6 @@ li {
 
   &__nav {
     margin-bottom: 30px;
-    text-align: center;
     background-color: #f2f2f2;
     padding: 10px;
     line-height: 2.5;
@@ -176,6 +180,12 @@ li {
       list-style-type: none;
       margin: 0;
       padding-inline-start: 0;
+
+      @media (min-width: 769px) {
+
+        width: 50%;
+
+      }
     }
 
     & ul li {
@@ -220,9 +230,21 @@ li {
 .restaurants {
   padding: $general_padding;
 
+  &__container {
+    @media (min-width: 769px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+
   a {
     text-decoration: none;
     color: black;
+    @media (min-width: 769px) {
+      width: 22%;
+    }
+
     & .card {
       margin-top: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -241,8 +263,7 @@ li {
         height: 145px;
       }
 
-      &__top-right
-      {
+      &__top-right {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -294,12 +315,13 @@ li {
     list-style-type: none;
     padding-inline-start: 0;
 
-    & a
-    {
+    & a {
       text-decoration: none;
       color: white;
+
       li {
       }
+
       line-height: 1.5;
 
 
@@ -311,18 +333,15 @@ li {
 }
 
 @keyframes loading {
-  0%
-  {
-    visibility : visible;
+  0% {
+    visibility: visible;
   }
 
-  99%
-  {
-    visibility : visible
+  99% {
+    visibility: visible
   }
 
-  100%
-  {
+  100% {
     visibility: hidden;
   }
 
