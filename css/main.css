@@ -29,6 +29,9 @@ li {
   width: 100%;
   animation: loading 3s forwards;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loader .lds-ellipsis {
   display: inline-block;
@@ -105,13 +108,13 @@ li {
 .header__location {
   width: 100%;
   background-color: lightgray;
+  box-shadow: 5px 10px 18px black;
 }
 .header__location i {
   text-align: right;
   padding: 10px 10px;
 }
 .header__location input {
-  text-align: center;
   background-color: lightgray;
   border: none;
   width: 27%;
@@ -149,8 +152,18 @@ li {
 .fonctionnement {
   padding: 10px 4%;
 }
+@media (min-width: 769px) {
+  .fonctionnement {
+    text-align: center;
+  }
+}
 .fonctionnement .buttons {
   margin-top: 10px;
+}
+@media (min-width: 769px) {
+  .fonctionnement .buttons {
+    margin-top: 20px;
+  }
 }
 .fonctionnement .buttons ul {
   list-style-type: none;
@@ -160,6 +173,7 @@ li {
 @media (min-width: 769px) {
   .fonctionnement .buttons ul {
     width: 50%;
+    margin: auto;
   }
 }
 .fonctionnement .buttons ul li {

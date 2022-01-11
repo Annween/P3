@@ -29,6 +29,7 @@ li {
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   &__menuLink {
     text-decoration: none;
@@ -40,8 +41,6 @@ li {
       }
       font-size: 30px;
       padding: 15px;
-      line-height: 1.5;
-      text-align: left;
     }
   }
 
@@ -162,7 +161,7 @@ li {
           & i {
 
             transition: 1s;
-            transform: rotate(360deg);
+            transform: rotate(-360deg);
           }
         }
 
