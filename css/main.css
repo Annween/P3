@@ -125,6 +125,11 @@ li {
     width: 10%;
   }
 }
+@media (min-width: 500px) {
+  .header__location input {
+    width: 23%;
+  }
+}
 .header__location input::placeholder {
   text-align: left;
   font-family: "Roboto", sans-serif;

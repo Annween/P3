@@ -22,6 +22,11 @@ li {
   justify-content: center;
   align-items: center;
 }
+.header__arrow {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
 .header__menuLink {
   text-decoration: none;
   color: black;
