@@ -96,6 +96,7 @@ li {
   margin-bottom: 30px;
   padding-bottom: 5px;
   width: 10%;
+  list-style-type: none;
 }
 @media (min-width: 769px) {
   .menu__container .menu__description .menu__intitule {
